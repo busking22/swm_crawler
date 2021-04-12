@@ -14,8 +14,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 
 URL = "https://www.swmaestro.org/sw/main/main.do"
 
-# driver = webdriver.Chrome(executable_path="chromedriver")
-driver = webdriver.Remote("http://127.0.0.1:4444/wd/hub", DesiredCapabilities.CHROME)
+driver = webdriver.Chrome(executable_path="chromedriver")
 driver.implicitly_wait(time_to_wait=5)
 febx = driver.find_element_by_xpath
 
